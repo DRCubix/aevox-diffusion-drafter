@@ -1,0 +1,37 @@
+Copyright (c) 2026 Daniel Rodd / AeVox.Ai
+
+================================================================================
+CODE LICENSE — Apache License 2.0
+================================================================================
+All source code in this repository (src/, scripts/) is licensed under the
+Apache License, Version 2.0 (the "License"); you may not use these files except
+in compliance with the License. You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+(Replace this notice with the full Apache-2.0 text before public release if your
+host requires the verbatim license body; the SPDX identifier is: Apache-2.0)
+
+================================================================================
+MODEL & DATA DERIVATIVES — NVIDIA Open Model License
+================================================================================
+This project builds on NVIDIA's open models:
+  - nvidia/NVIDIA-Nemotron-3-Super-120B-A12B  (the speculative-decoding target)
+  - nvidia/Nemotron-Labs-Diffusion-3B          (the drafter base)
+
+The trained LoRA adapter and the self-distilled dataset produced by this project
+are DERIVATIVE WORKS of those models and are therefore additionally governed by
+the NVIDIA Open Model License under which the base models are released. Users of
+the adapter/dataset must comply with that license in addition to Apache-2.0 for
+the code. See:
+  https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+
+ATTRIBUTION: This work (alignment method, pipeline, LoRA adapter, dataset) was
+created by Daniel Rodd / AeVox.Ai. NVIDIA, Nemotron, and Nemotron-Labs-Diffusion
+are trademarks of NVIDIA Corporation; their inclusion is an acknowledgement of
+the underlying models and does not imply endorsement.

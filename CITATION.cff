@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "AeVox Diffusion Drafter: Aligning a diffusion language model as a cross-model speculative-decoding drafter for Nemotron-3-Super-120B"
+authors:
+  - family-names: "Rodd"
+    given-names: "Daniel"
+    affiliation: "AeVox.Ai"
+date-released: 2026-06-12
+license: Apache-2.0
+abstract: >
+  We LoRA-align NVIDIA's tri-mode Nemotron-Labs-Diffusion-3B to the token
+  distribution of Nemotron-3-Super-120B-A12B and use it as a cross-model
+  speculative-decoding drafter. Alignment raises accepted-tokens-per-target-forward
+  from 2.26 to 2.79 (beating the 120B's native MTP self-speculation at 2.75),
+  projecting to ~2.5x decode speedup with an NVFP4-quantized drafter. We
+  additionally characterize the acceptance ceiling and show that data, epochs,
+  multi-step sampling, and logit distillation do not surpass ~2.8, motivating
+  hidden-state-conditioned (DFlash) and tree-drafting approaches for 3-4x.
+keywords:
+  - speculative decoding
+  - diffusion language models
+  - LoRA
+  - Nemotron
+  - inference acceleration
+  - DGX Spark

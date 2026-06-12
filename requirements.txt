@@ -1,0 +1,8 @@
+# Core (matches the nvcr.io/nvidia/vllm:26.05-py3 container, vLLM 0.20.1)
+# Training/eval run inside that container; these are the extras beyond it.
+peft>=0.13
+transformers>=5.0      # the 3B uses trust_remote_code modeling requiring transformers >=5.0
+datasets>=2.19         # build_distill.py prompt-pool construction
+huggingface_hub>=0.24
+torch>=2.5             # provided by the NVIDIA container (2.12 on GB10/Blackwell)
+# vllm==0.20.1         # provided by the container; needed for serving + logit capture
