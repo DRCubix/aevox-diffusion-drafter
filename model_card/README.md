@@ -38,7 +38,7 @@ from peft import PeftModel
 
 m = AutoModel.from_pretrained("nvidia/Nemotron-Labs-Diffusion-3B",
                               trust_remote_code=True, dtype=torch.bfloat16).to("cuda").eval()
-m = PeftModel.from_pretrained(m, "Daniel-Rodd/aevox-diffusion-drafter-nemotron3-super").merge_and_unload()
+m = PeftModel.from_pretrained(m, "DrCubix/aevox-diffusion-drafter-nemotron3-super").merge_and_unload()
 # m.encoder / m.diffusion_head = the aligned drafter.
 # See github.com/DRCubix/aevox-diffusion-drafter (src/eval_lora_acceptance.py) for the spec-decode loop.
 ```

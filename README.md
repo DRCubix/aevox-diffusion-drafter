@@ -56,7 +56,7 @@ python3 src/eval_lora_acceptance.py --adapter ./lora_ckpt/epoch3
 Full step-by-step (containers, hardware, gotchas) in [docs/03-reproduce.md](docs/03-reproduce.md).
 
 ## Artifacts
-- **Model (LoRA adapter):** `Daniel-Rodd/aevox-diffusion-drafter-nemotron3-super` *(HuggingFace — see `model_card/`)*
+- **Model (LoRA adapter):** [`DrCubix/aevox-diffusion-drafter-nemotron3-super`](https://huggingface.co/DrCubix/aevox-diffusion-drafter-nemotron3-super) *(HuggingFace — see `model_card/`)*
 - **Dataset (10K self-distillation):** `DrCubix/nemotron3-super-120b-distill`
 
 ## The honest ceiling (and the path to 3–4×)
