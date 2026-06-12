@@ -3,7 +3,9 @@
 # AeVox Diffusion Drafter
 ### Aligning a diffusion language model as a cross-model speculative-decoding drafter for NVIDIA Nemotron-3-Super-120B
 
-**Created by [Daniel Rodd](https://github.com/) · [AeVox.Ai](https://aevox.ai)**
+**Created by [Daniel Rodd](https://github.com/DRCubix) · [AeVox.Ai](https://aevox.ai)**
+
+![Results: acceptance and projected speedup](assets/results.png)
 
 </div>
 

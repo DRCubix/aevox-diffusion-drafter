@@ -7,3 +7,5 @@ __pycache__/
 *.jsonl
 *progress.json
 *.log
+# keep the results figure (not a log):
+!assets/results.png
